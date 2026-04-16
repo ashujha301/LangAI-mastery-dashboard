@@ -28,13 +28,6 @@ export default function DashboardPage() {
     progressPct,
   } = useCurrentProgress();
 
-  const greeting = () => {
-    const h = new Date().getHours();
-    if (h < 12) return "Good morning";
-    if (h < 17) return "Good afternoon";
-    return "Good evening";
-  };
-
   const fadeUp = (delay = 0) => ({
     initial: { opacity: 0, y: 14 },
     animate: { opacity: 1, y: 0 },
@@ -46,7 +39,7 @@ export default function DashboardPage() {
       {/* Welcome header */}
       <motion.div {...fadeUp(0)}>
         <h1 className="font-display text-2xl font-bold text-foreground">
-          {greeting()} 👋
+          Hey 👋
         </h1>
         <p className="text-muted-foreground mt-1 text-sm">
           Your LangChain + LangGraph mastery path

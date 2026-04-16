@@ -668,15 +668,7 @@ export default function LandingPage() {
               </span>
             </div>
             <p className="text-xs text-white/40 text-center">
-              © {new Date().getFullYear()}. Built with love using{" "}
-              <a
-                href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(typeof window !== "undefined" ? window.location.hostname : "")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-white/60 transition-colors"
-              >
-                caffeine.ai
-              </a>
+              © {new Date().getFullYear()}. Built with ♥
             </p>
           </div>
         </footer>
