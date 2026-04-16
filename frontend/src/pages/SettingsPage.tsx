@@ -139,42 +139,6 @@ export default function SettingsPage() {
         </CardContent>
       </Card>
 
-      {/* ─── Appearance ───────────────────────────────────────────── */}
-      <Card
-        className="opacity-0 animate-fade-up animate-stagger-3"
-        style={{ animationFillMode: "forwards" }}
-        data-ocid="settings.appearance_card"
-      >
-        <CardHeader className="pb-3">
-          <div className="flex items-center gap-2">
-            {isDark ? (
-              <Moon className="h-4 w-4 text-accent" />
-            ) : (
-              <Sun className="h-4 w-4 text-accent" />
-            )}
-            <CardTitle className="font-display text-base">Appearance</CardTitle>
-          </div>
-        </CardHeader>
-        <CardContent>
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-medium text-foreground">
-                {isDark ? "Dark Mode" : "Light Mode"}
-              </p>
-              <p className="text-xs text-muted-foreground">
-                Switch between dark and light theme.
-              </p>
-            </div>
-            <Switch
-              checked={isDark}
-              onCheckedChange={toggleTheme}
-              data-ocid="settings.theme.toggle"
-              aria-label="Toggle theme"
-            />
-          </div>
-        </CardContent>
-      </Card>
-
       {/* Back link */}
       <div
         className="text-center opacity-0 animate-fade-up animate-stagger-4"
