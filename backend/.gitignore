@@ -1,0 +1,6 @@
+#Ignore environment file
+.env
+
+# Ignore all Python cache directories everywhere
+**/__pycache__/
+**/*.py[cod]
